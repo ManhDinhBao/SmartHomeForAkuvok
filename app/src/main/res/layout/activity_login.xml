@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+
+    <!--LOGO-->
+    <ImageView
+        android:id="@+id/imageView_login_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/summit_logo" />
+
+    <!--USERNAME-->
+    <LinearLayout
+        android:id="@+id/linearLayout_login_userName"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView_login_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_ui_display_heavy"
+            android:text="@string/label_user_name"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText_login_username"
+            android:layout_width="400dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_textedit_rectangle"
+            android:fontFamily="@font/sf_ui_display_regular"
+            android:hint="@string/hint_user_name"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/transparent80" />
+    </LinearLayout>
+
+    <!--PASSWORD-->
+    <LinearLayout
+        android:id="@+id/linearLayout_login_passWord"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_login_userName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_ui_display_heavy"
+            android:text="@string/label_password"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText_login_password"
+            android:layout_width="400dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_textedit_rectangle"
+            android:fontFamily="@font/sf_ui_display_regular"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/transparent80" />
+    </LinearLayout>
+
+    <!--SERVER-->
+    <LinearLayout
+        android:id="@+id/linearLayout_login_server"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_login_passWord"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_ui_display_heavy"
+            android:text="@string/label_server_address"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText_login_server"
+            android:layout_width="400dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_textedit_rectangle"
+            android:digits="0123456789."
+            android:fontFamily="@font/sf_ui_display_regular"
+            android:hint="@string/hint_server_address"
+            android:inputType="number|numberDecimal"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/transparent80" />
+    </LinearLayout>
+
+    <!--REMEMBER ACCOUNT-->
+    <CheckBox
+        android:id="@+id/checkBox_login_remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout_login_server"
+        android:layout_alignStart="@id/linearLayout_login_server"
+        android:layout_marginTop="5dp"
+        android:buttonTint="@color/white"
+        android:textSize="14sp"
+        android:fontFamily="@font/sf_ui_display_regular"
+        android:text="@string/label_remember_account"
+        android:textColor="@color/white" />
+
+    <!--SHOW/HIDE PASSWORD-->
+    <CheckBox
+        android:id="@+id/checkBox_login_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout_login_passWord"
+        android:layout_alignEnd="@id/linearLayout_login_server"
+        android:layout_marginTop="5dp"
+        android:buttonTint="@color/white"
+        android:fontFamily="@font/sf_ui_display_regular"
+        android:text="@string/label_show_password"
+        android:textSize="14sp"
+        android:textColor="@color/white" />
+
+    <!--BUTTON LOGIN-->
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout_login_server"
+        android:layout_alignEnd="@id/linearLayout_login_server"
+        android:layout_marginTop="30dp"
+        android:background="@color/transparent"
+        android:fontFamily="@font/sf_ui_display_heavy"
+        android:text="@string/label_login"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <!--AMBER VIEW BELOW LOGIN BUTTON-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/button_login"
+        android:layout_alignStart="@id/button_login"
+        android:layout_alignEnd="@id/button_login"
+        android:background="@color/amber">
+
+    </View>
+
+    <!--COPYRIGHT-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/sf_ui_display_regular"
+        android:text="COPYRIGHT © LEFA 2020"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+</RelativeLayout>

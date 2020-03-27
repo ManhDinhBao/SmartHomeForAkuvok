@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout_Notification_Item"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/transparent80">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_Notification_ShortContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="60dp"
+        android:layout_toLeftOf="@+id/textView_Notification_Date"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_Notification_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_ui_display_medium"
+            android:maxLines="1"
+            android:text="Thong bao quy dinh..."
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView_Notification_Detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/sf_ui_display_regular"
+            android:maxLines="1"
+            android:text="Thong bao quy dinh..."
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_Notification_Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearLayout_Notification_ShortContent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:fontFamily="@font/sf_ui_display_medium"
+        android:maxLines="1"
+        android:text="30/12/2020"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imageView_Notification_Emergency"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_above="@+id/textView_Notification_Date"
+        android:layout_alignRight="@+id/textView_Notification_Date"
+        android:layout_marginBottom="5dp" />
+
+</RelativeLayout>

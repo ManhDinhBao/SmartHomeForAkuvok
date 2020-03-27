@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView_FragmentHome_Background"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!--Username and Weather-->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView_fragmentHome_User"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/sf_ui_display_heavy"
+                    android:text="Hi Tiger!"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textView_fragmentHome_Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView_fragmentHome_User"
+                    android:layout_alignStart="@id/textView_fragmentHome_User"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/sf_ui_display_medium"
+                    android:text="Sun. July 8. 2020"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView_fragmentHome_Weather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/textView_fragmentHome_Date"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/sf_ui_display_medium"
+                    android:text="Sunny"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView_fragmentHome_Time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView_fragmentHome_Date"
+                    android:layout_alignStart="@id/textView_fragmentHome_User"
+                    android:fontFamily="@font/sf_ui_display_bold"
+                    android:text="12:30"
+                    android:textColor="@android:color/white"
+                    android:textSize="60sp" />
+
+                <TextView
+                    android:id="@+id/textView_fragmentHome_Temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/textView_fragmentHome_Time"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/sf_ui_display_bold"
+                    android:text="30°C"
+                    android:textColor="@android:color/white"
+                    android:textSize="60sp" />
+
+            </RelativeLayout>
+
+            <!--Scene-->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView_fragmentHome_Scene"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_above="@id/recycleView_fragmentHome_Scenes"
+                    android:fontFamily="@font/sf_ui_display_bold"
+                    android:text="Favorite Scenes"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleView_fragmentHome_Scenes"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout_fragmentHome_Rooms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="32dp"
+                android:background="@color/transparent"
+                app:tabGravity="center"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@android:color/black">
+            </com.google.android.material.tabs.TabLayout>
+
+            <com.example.smarthome.Fragment.Home.CustomViewPager
+                android:id="@+id/viewpager_fragmentHome_Rooms"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tabLayout_fragmentHome_Rooms"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="70dp"></com.example.smarthome.Fragment.Home.CustomViewPager>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

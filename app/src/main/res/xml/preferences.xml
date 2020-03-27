@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="settingCategory"
+        android:layout="@layout/setting_header"
+        android:title="@string/label_setting">
+        <ListPreference
+            android:defaultValue="en"
+            android:dialogTitle="@string/label_choose_language"
+            android:entries="@array/arr_language_name"
+            android:entryValues="@array/arr_language_value"
+            android:icon="@drawable/language_64px"
+            android:key="language"
+            android:negativeButtonText="@string/button_cancel"
+            android:summary="@string/label_summary_language"
+            android:title="@string/label_language" />
+        <ListPreference
+            android:defaultValue="2"
+            android:dialogTitle="@string/label_choose_wallpaper"
+            android:entries="@array/arr_background_name"
+            android:entryValues="@array/arr_background_value"
+            android:icon="@drawable/wallpaper_64px"
+            android:key="background"
+            android:negativeButtonText="@string/button_cancel"
+            android:summary="@string/label_summary_wallpaper"
+            android:title="@string/label_wallpaper" />
+        <Preference
+            android:icon="@drawable/account_64px"
+            android:key="accountInfo"
+            android:title="@string/label_account_info"></Preference>
+        <Preference
+            android:icon="@drawable/info_64px"
+            android:key="softInfo"
+            android:title="@string/label_software_info"></Preference>
+    </PreferenceCategory>
+</androidx.preference.PreferenceScreen>

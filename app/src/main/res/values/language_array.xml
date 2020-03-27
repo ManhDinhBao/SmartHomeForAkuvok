@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arr_language_name">
+       <item>@string/language_english</item>
+        <item>@string/language_vietnam</item>
+    </string-array>
+    <string-array name="arr_language_value">
+        <item>@string/language_english_code</item>
+        <item>@string/language_vietnamese_code</item>
+    </string-array>
+</resources>

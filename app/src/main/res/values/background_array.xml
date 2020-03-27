@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arr_background_name">
+        <item>@string/background1</item>
+        <item>@string/background2</item>
+        <item>@string/background3</item>
+        <item>@string/background4</item>
+    </string-array>
+    <string-array name="arr_background_value">
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+    </string-array>
+    <array name="imageValues">
+        <item>@drawable/home_background</item>
+        <item>@drawable/home_background2</item>
+        <item>@drawable/home_background3</item>
+        <item>@drawable/home_background4</item>
+    </array>
+</resources>
