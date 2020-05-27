@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tab_layout_border">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_itemEnergyMonth_Calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner_itemEnergyYear_Year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_itemEnergyYear_GetData"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/linearLayout_itemEnergyMonth_Calendar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:fontFamily="@font/sf_ui_display_semibold"
+        android:text="@string/label_get_data"
+        android:textColor="@android:color/black"
+        android:textSize="20sp">
+
+    </Button>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_itemEnergyYear_GetData"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/water_64px"></androidx.appcompat.widget.AppCompatImageView>
+
+            <TextView
+                android:id="@+id/textView_itemEnergyYear_waterValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/sf_ui_display_heavy"
+                android:text="100 m³"
+                android:textColor="@color/white"
+                android:textSize="20sp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/money_80px"></androidx.appcompat.widget.AppCompatImageView>
+
+            <TextView
+                android:id="@+id/textView_itemEnergyYear_waterMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/sf_ui_display_heavy"
+                android:text="643.000 VND"
+                android:textColor="@color/white"
+                android:textSize="20sp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/electric_50px"></androidx.appcompat.widget.AppCompatImageView>
+
+            <TextView
+                android:id="@+id/textView_itemEnergyYear_electricValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/sf_ui_display_heavy"
+                android:text="750 kWh"
+                android:textColor="@color/white"
+                android:textSize="20sp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/money_80px"></androidx.appcompat.widget.AppCompatImageView>
+
+            <TextView
+                android:id="@+id/textView_itemEnergyYear_electricMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/sf_ui_display_heavy"
+                android:text="1.000.000 VND"
+                android:textColor="@color/white"
+                android:textSize="20sp"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -28,7 +28,9 @@
         <Preference
             android:icon="@drawable/account_64px"
             android:key="accountInfo"
-            android:title="@string/label_account_info"></Preference>
+            android:title="@string/label_account_info">
+
+        </Preference>
         <Preference
             android:icon="@drawable/info_64px"
             android:key="softInfo"

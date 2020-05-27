@@ -47,7 +47,7 @@
     <string name="message_error_no_apartment">This account does not manage any apartment</string>
     <string name="message_error_wrong_account">Wrong username or password. Please try again!</string>
     <string name="message_error_data">Data error</string>
-    <string name="message_service_error">Can\'t get data from server</string>
+    <string name="message_service_error">Can\'t get apartment data</string>
     <string name="message_error_no_internet">No Internet. Please check Internet connection and try again</string>
     <string name="message_load_data">Loading data...</string>
     <string name="message_connecting_server">Connecting server...</string>
@@ -61,4 +61,19 @@
     <string name="label_close">CLOSE</string>
     <string name="label_open">OPEN</string>
     <string name="label_stop">STOP</string>
+    <string name="label_get_data">GET DATA</string>
+    <string name="label_total_electric">Total:</string>
+    <string name="label_total_water">Total:</string>
+    <string name="label_water">WATER</string>
+    <string name="label_electric">ELECTRIC</string>
+    <string name="label_day">DAY</string>
+    <string name="label_month">MONTH</string>
+    <string name="label_year">YEAR</string>
+    <string name="label_apartment">Apartment</string>
+    <string name="label_phone">Phone</string>
+    <string name="label_address">Address</string>
+    <string name="label_description">Description</string>
+    <string name="label_id">ID</string>
+    <string name="label_server_disconnect">Connection to server lost</string>
+    <string name="message_server_off">Can\'t connect to server</string>
 </resources>

@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".View.Activity.MainActivity">
 
     <RelativeLayout
-        android:id="@+id/relaytiveLayout_main"
+        android:id="@+id/relativeLayout_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="top">
@@ -18,10 +18,10 @@
         android:id="@+id/bottomNavigationView_main_menu"
         android:layout_width="match_parent"
         android:layout_height="70dp"
+        android:layout_gravity="bottom"
         android:background="@android:color/white"
         app:itemBackground="@color/transparent80"
-        app:itemIconTint="@drawable/bottom_nav_textstate"
-        app:itemTextColor="@drawable/bottom_nav_textstate"
-        android:layout_gravity="bottom"
+        app:itemIconTint="@drawable/bottom_nav_text_state"
+        app:itemTextColor="@color/amber"
         app:menu="@menu/bottom_nav_menu" />
 </FrameLayout>

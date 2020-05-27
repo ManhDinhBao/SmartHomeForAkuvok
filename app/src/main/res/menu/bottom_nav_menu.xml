@@ -9,16 +9,16 @@
     <item
         android:id="@+id/item_main_notify"
         android:enabled="true"
-        android:icon="@drawable/notify_none_30px"
+        android:icon="@drawable/notify_pressed_30px"
         android:title="@string/label_notification" />
     <item
         android:id="@+id/item_main_energy"
         android:enabled="true"
-        android:icon="@drawable/graph_none_30px"
+        android:icon="@drawable/graph_pressed_30px"
         android:title="@string/label_energy" />
     <item
         android:id="@+id/item_main_setting"
         android:enabled="true"
-        android:icon="@drawable/setting_none_30px"
+        android:icon="@drawable/setting_pressed_30px"
         android:title="@string/label_setting" />
 </menu>

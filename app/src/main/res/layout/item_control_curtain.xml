@@ -75,7 +75,7 @@
                         android:layout_height="30dp"
                         android:scaleType="centerInside"
                         android:background="@null"
-                        android:src="@drawable/button_open_64px"
+                        android:src="@drawable/button_close_64px"
                         android:layout_centerInParent="true" />
                 </RelativeLayout>
 
@@ -105,7 +105,7 @@
                         android:layout_height="30dp"
                         android:background="@null"
                         android:scaleType="centerInside"
-                        android:src="@drawable/button_close_64px"
+                        android:src="@drawable/button_open_64px"
                         android:layout_centerInParent="true" />
                 </RelativeLayout>
 

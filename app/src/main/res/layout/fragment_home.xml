@@ -62,14 +62,13 @@
                     android:textColor="@android:color/white"
                     android:textSize="20sp" />
 
-                <TextView
-                    android:id="@+id/textView_fragmentHome_Time"
+                <DigitalClock
+                    android:id="@+id/dClock_fragmentHome_Time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/textView_fragmentHome_Date"
                     android:layout_alignStart="@id/textView_fragmentHome_User"
                     android:fontFamily="@font/sf_ui_display_bold"
-                    android:text="12:30"
                     android:textColor="@android:color/white"
                     android:textSize="60sp" />
 
@@ -77,7 +76,7 @@
                     android:id="@+id/textView_fragmentHome_Temp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignTop="@id/textView_fragmentHome_Time"
+                    android:layout_alignTop="@id/dClock_fragmentHome_Time"
                     android:layout_alignParentRight="true"
                     android:fontFamily="@font/sf_ui_display_bold"
                     android:text="30°C"
@@ -134,13 +133,13 @@
                 app:tabSelectedTextColor="@android:color/black">
             </com.google.android.material.tabs.TabLayout>
 
-            <com.example.smarthome.Fragment.Home.CustomViewPager
+            <com.lefatechs.smarthome.Controller.CustomViewPager
                 android:id="@+id/viewpager_fragmentHome_Rooms"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_below="@id/tabLayout_fragmentHome_Rooms"
                 android:layout_marginLeft="32dp"
-                android:layout_marginBottom="70dp"></com.example.smarthome.Fragment.Home.CustomViewPager>
+                android:layout_marginBottom="70dp"></com.lefatechs.smarthome.Controller.CustomViewPager>
         </RelativeLayout>
     </LinearLayout>
 </FrameLayout>

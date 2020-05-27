@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:weightSum="10">
+
+    <!--Avatar-->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <!--AVATAR-->
+            <ImageView
+                android:id="@+id/imageView_userInformation_avatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/user_avatar_50px"></ImageView>
+
+            <!--FULL NAME-->
+            <TextView
+                android:id="@+id/textView_userInformation_userFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView_userInformation_avatar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="">
+
+            </TextView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--Information-->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:paddingTop="50dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <!--USER ID-->
+            <TextView
+                android:id="@+id/textView_userInformation_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_ui_display_medium"
+                android:text="@string/label_id"
+                android:textSize="16sp">
+
+            </TextView>
+
+            <!--APARTMENT NAME-->
+            <TextView
+                android:id="@+id/textView_userInformation_apartment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_userInformation_id"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/sf_ui_display_medium"
+                android:text="@string/label_apartment"
+                android:textSize="16sp">
+
+            </TextView>
+
+            <!--PHONE NUMBER-->
+            <TextView
+                android:id="@+id/textView_userInformation_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/textView_userInformation_apartment"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/textView_userInformation_apartment"
+                android:fontFamily="@font/sf_ui_display_medium"
+                android:text="@string/label_phone"
+                android:textSize="16sp">
+
+            </TextView>
+
+            <!--USER ADDRESS-->
+            <TextView
+                android:id="@+id/textView_userInformation_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_userInformation_apartment"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/sf_ui_display_medium"
+                android:text="@string/label_address"
+                android:textSize="16sp">
+
+            </TextView>
+
+            <!--DESCRIPTION-->
+            <TextView
+                android:id="@+id/textView_userInformation_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_userInformation_address"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/sf_ui_display_medium"
+                android:text="@string/label_description"
+                android:textSize="16sp">
+
+            </TextView>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -2,4 +2,6 @@
 <resources>
     <dimen name="device_space">20dp</dimen>
     <dimen name="scene_space">10dp</dimen>
+    <dimen name="chart_xaxis_textsize">16sp</dimen>
+    <dimen name="chart_values_textsize">16sp</dimen>
 </resources>

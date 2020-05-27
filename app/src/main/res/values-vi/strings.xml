@@ -46,7 +46,7 @@
     <string name="message_error_no_apartment">Tài khoản này không quản lý căn hộ nào</string>
     <string name="message_error_wrong_account">Sai tên đăng nhập hoặc mật khẩu. Hãy thử lại!</string>
     <string name="message_error_data">Lỗi dữ liệu</string>
-    <string name="message_service_error">Không lấy được dữ liệu từ máy chủ</string>
+    <string name="message_service_error">Không lấy được dữ liệu căn hộ</string>
     <string name="message_error_no_internet">Không có kết nối Internet. Hãy kiểm tra lại đường truyền mạng và thử lại</string>
     <string name="message_load_data">Đang lấy dữ liệu...</string>
     <string name="message_connecting_server">Đang kết nối tới server...</string>
@@ -60,4 +60,19 @@
     <string name="label_close">ĐÓNG</string>
     <string name="label_open">MỞ</string>
     <string name="label_stop">DỪNG</string>
+    <string name="label_get_data">XEM DỮ LIỆU</string>
+    <string name="label_total_electric">Lượng điện tiêu thụ</string>
+    <string name="label_total_water">Lượng nước tiêu thụ</string>
+    <string name="label_electric">ĐIỆN</string>
+    <string name="label_water">NƯỚC</string>
+    <string name="label_day">NGÀY</string>
+    <string name="label_month">THÁNG</string>
+    <string name="label_year">NĂM</string>
+    <string name="label_apartment">Tên căn hộ</string>
+    <string name="label_phone">Số điện thoại</string>
+    <string name="label_address">Địa chỉ</string>
+    <string name="label_description">Chi tiết</string>
+    <string name="label_id">ID</string>
+    <string name="label_server_disconnect">Mất kết nối tới máy chủ</string>
+    <string name="message_server_off">Không thể kết nối tới máy chủ</string>
 </resources>
